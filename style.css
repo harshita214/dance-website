@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Upper Navigation Bar */
+#upper-navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.phone{
+    padding: 13px;
+    font-family: 'Merriweather', serif;
+    font-size: 0.9rem;
+    margin-right: 240px;
+}
+.phone-icon{
+    display: flex;
+    height: 18px;
+    width: 15px;
+    padding-left: 45px;
+    padding-right: 10px;
+}
+.other-icons{
+    position: absolute;
+    right: 38px;
+    display: flex;
+}
+.icons{
+    height: 18px;
+    width: 18px;
+    padding: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.icons:hover{
+    background-color: rgb(211, 170, 109);
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: #c51c2f;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    height: 95px;
+    border-radius: 3rem;
+}
+#navbar .items{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.items li a{
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif;
+    transition: all 0.3s ease-in-out;
+
+}
+.items li a:hover{
+    color: rgb(211, 170, 109);
+}
+#navbar .logo{
+    color: white;
+    padding: 0px 40px;
+    margin-top: -3px;
+    font-family: 'EB Garamond', serif;
+    font-size: 4.5rem;
+    color: rgb(211, 170, 109);
+}
+
+/* Home Page */
+#home{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 900px;
+    width: 100%;
+    background: url('images/ps1.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    padding: 40px 0px;
+    z-index: -1;
+}
+.intro{
+   padding: 40px;
+   padding-top: 0px;
+   font-style: italic;
+   font-family: 'Merriweather', serif;
+   font-size: 1.2rem;
+}
+
+    #home h2 {
+        font-family: cursive;
+        line-height: 3rem;
+        font-size: xxx-large;
+        padding: 20px 0px;
+        animation: left-to-right 0.6s ease-in 1 forwards;
+    }
+
+@keyframes left-to-right{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(3px);
+    }
+}
+#home .info{
+    padding-left: 40px;
+    animation: right-to-left 1.3s ease-in 1 forwards;
+}
+@keyframes right-to-left{
+    from{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(3px);
+    }
+}
+#home .btn1{
+    margin-right: 20px;
+    margin-top: -20px;
+    background-color: transparent;
+    padding: 6px 10px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+   
+
+    
+    border-radius: 5rem;
+    
+    background-color: rgb(183 27 42);
+    border: 2px solid #b71b2a;
+    color: white;
+    font-weight: 590;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 3px 6px rgb(245 149 149);
+}
+#home .btn1:hover{
+    background-color: transparent;
+    color: black;
+}
+#home .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* About section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.cards{
+    border-right: 1px solid rgb(73, 72, 72);
+    height: 180px;
+    width: 25%;
+    background-color: black;
+}
+.cards .content{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content img{
+    padding-bottom: 8px;
+    height: 35px;
+    width: 35px;
+}
+.content p{
+    padding: 5px 0px;
+    text-align: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1.1rem ;
+    color: rgb(192, 190, 190);
+}
+.content h3{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* About Us section */
+#about-us{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0px;
+}
+.first-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 62%;
+    padding: 40px 0px;
+    position: relative;
+    left: -145px;
+    box-shadow: -1px -1px 12px -2px black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+.first-box h2{
+    margin-bottom: 40px;
+    font-size: 3rem;
+    padding: 0px 40px;
+}
+.first-box h2 span{
+    color: rgb(183 27 42);
+    font-family: 'EB Garamond', serif;
+}
+.first-box h3{
+    margin-bottom: 8px;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0px 40px;
+}
+.first-box p{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: rgb(59, 59, 59);
+    padding: 0px 40px;
+    padding-right: 30px;
+}
+.first-box button{
+    width: 40%;
+    padding: 5px 10px;
+    border: 2.3px solid rgb(183 27 42);
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    font-size: 1rem;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.first-box button:hover{
+    background-color: rgb(183 27 42);
+    color: white;
+}
+.second-box {
+    z-index: -1;
+    padding: 80px;
+   
+    position: relative;
+}
+.second-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+mark {
+    background-color: #b71b2a;
+    color: #fefefe;
+    padding: 1rem;
+}
